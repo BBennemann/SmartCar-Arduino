@@ -5,44 +5,36 @@
 
 ## About The Project
 
-This repository contains the source code for an Arduino-based SmartCar, developed as a hands-on project to explore robotics and embedded systems. The car can be controlled in two different modes, each located in its own folder: autonomous navigation using an ultrasonic sensor and remote control via a Bluetooth module.
+This repository contains the source code for an Arduino-based SmartCar, developed as a hands-on project to explore robotics and embedded systems. The car can operate in two different modes: autonomous navigation and remote control via Bluetooth.
 
-The core of the project is an Arduino board that controls the motors using an L298N H-Bridge, allowing for precise movement and direction changes.
+The core of the project is an Arduino board that controls the motors using an H-Bridge, allowing for precise movement and direction changes.
 
 ## Project Versions
 
-This repository includes two distinct operational modes for the SmartCar:
+This repository is divided into two distinct versions, each located in its own folder. **For detailed instructions, specific hardware lists, and wiring diagrams, please see the `README.md` file inside each project folder.**
 
-### 1. Autonomous Mode (Ultrasonic Sensor)
-* **Folder:** `SmartCar_distancia/`
-* **Description:** In this mode, the car navigates its environment autonomously. It uses an HC-SR04 ultrasonic sensor mounted on a servo motor to scan for obstacles. When an obstacle is detected, the car stops, looks left and right to find the clearest path, and then proceeds, effectively avoiding collisions.
+* **[Autonomous Mode (Ultrasonic Sensor)](/ultrasonic_smartcar)**: The car navigates autonomously, using an ultrasonic sensor to detect and avoid obstacles.
+* **[Remote Control Mode (Bluetooth)](/bluetooh_smartcar)**: The car is controlled remotely from a smartphone or other device via a Bluetooth module.
 
-### 2. Remote Control Mode (Bluetooth)
-* **Folder:** `SmartCar_bluetooth/`
-* **Description:** This version allows for direct control of the car from a smartphone or any other Bluetooth-enabled device. It uses an HC-05 or HC-06 Bluetooth module to receive commands, giving the user full remote control over the car's movements (forward, backward, left, and right).
+## Assembly Video Tutorial
 
-## Hardware Components
+For a step-by-step guide on how to assemble the car chassis and wire the main components, you can watch this video tutorial:
 
-To build this project, you will need the following components:
+**[Watch the Assembly Tutorial on YouTube](https://www.youtube.com/watch?v=MF-FqZn5e5M&list=WL&index=5)**
+
+## General Hardware Components
+
+This is a general list of all components used across both versions of the project.
 
 * Arduino Uno (or a compatible board)
-* L298N Motor Driver (H-Bridge)
-* 2x DC Motors (with wheels)
+* Motor Driver (H-Bridge)
+* 4x DC Motors (with wheels)
 * Car Chassis
 * HC-SR04 Ultrasonic Sensor
 * SG90 Servo Motor
 * HC-05 or HC-06 Bluetooth Module
 * Jumper Wires
 * Power Source (e.g., battery pack)
-
-## How to Use
-
-1.  **Choose a Version:** Select the mode you want to implement (`SmartCar_distancia` for autonomous or `SmartCar_bluetooth` for remote control).
-2.  **Assemble the Circuit:** Connect the components to the Arduino board according to the wiring diagram for the chosen version. *(Note: It would be beneficial to add circuit diagrams to the repository)*.
-3.  **Upload the Code:** Open the `.ino` file from the corresponding folder in the Arduino IDE.
-4.  **Install Libraries:** Make sure you have any necessary libraries installed (e.g., `Servo.h` is standard, but others might be needed).
-5.  **Compile and Upload:** Compile the code and upload it to your Arduino board.
-6.  **Power On:** Power the circuit and the SmartCar will start operating in the selected mode.
 
 ## Contributors
 
