@@ -1,4 +1,6 @@
 # Autonomous SmartCar (Ultrasonic Sensor)
+[![Arduino](https://img.shields.io/badge/Arduino-C++-00979D?style=for-the-badge&logo=arduino)](https://www.arduino.cc/)
+[![C++](https://img.shields.io/badge/C++-blue?style=for-the-badge&logo=cplusplus)](https://isocpp.org/)
 
 This version of the SmartCar is programmed to navigate its environment autonomously, detecting and avoiding obstacles in its path.
 
@@ -25,8 +27,7 @@ The car uses an HC-SR04 ultrasonic sensor mounted on an SG90 servo motor. The se
 
 Below is a placeholder for the circuit diagram and a list of the main pin connections.
 
-**[Insert an image of your wiring diagram here]**
-*Example: `![Wiring Diagram](circuit.png)`*
+<img src="ultrasonic_bb.jpg" width="500">  
 
 ### Key Pin Connections:
 * **L298N Motor Driver:**
@@ -48,3 +49,7 @@ Below is a placeholder for the circuit diagram and a list of the main pin connec
 3.  Ensure the `Servo.h` library is included (it is a standard library).
 4.  Compile and upload the code to your Arduino board.
 5.  Power on the car and it will begin to move autonomously.
+
+## Contributors
+
+* **Bernardo Thomas Bennemann** - *Project Owner* - [BBennemann](https://github.com/BBennemann)
