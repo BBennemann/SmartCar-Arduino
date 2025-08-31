@@ -25,7 +25,7 @@ The car uses an HC-SR04 ultrasonic sensor mounted on an SG90 servo motor. The se
 
 ## Setup and Wiring
 
-Below is a placeholder for the circuit diagram and a list of the main pin connections.
+Below is a image for the circuit diagram and a list of the main pin connections.
 
 <img src="ultrasonic_bb.jpg" width="500">  
 
